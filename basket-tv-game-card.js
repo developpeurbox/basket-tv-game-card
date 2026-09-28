@@ -63,6 +63,7 @@ class BasketTvGameCard extends HTMLElement {
             }
             #${uid} .team-logo-wrap {
               position: relative; width: 72px; height: 72px;
+              background: white;
               display: flex; align-items: center; justify-content: center;
             }
             #${uid} .team-logo-ghost {
