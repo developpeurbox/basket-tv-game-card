@@ -1,14 +1,19 @@
 # 🏆 **Basket TV Game Card** 📺
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/developpeurbox/ha-basket-tv-game-card/blob/main/LICENSE)
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge)](https://github.com/hacs/integration)
-[![Community Forum](https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge)](https://community.home-assistant.io)
+[![PayPal](https://img.shields.io/badge/paypal-me-blue.svg?style=for-the-badge&color=purple&logo=paypal&logoColor=ccc&link=https%3A%2F%2Fpaypal.me%2hlaissus/5)](https://paypal.me/hlaissus/5)
+[![GitHub Release]( https://img.shields.io/github/v/release/developpeurbox/basket-tv-game-card?style=for-the-badge&color=blue)](https://github.com/developpeurbox/basket-tv-game-card/releases)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge&color=blue)](https://github.com/hacs/integration)
+[![Community Forum]( https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge&color=pink)](https://forum.hacf.fr/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://github.com/developpeurbox/basket-tv-game-card/blob/main/LICENSE)
 
-[![HACS Action](https://github.com/developpeurbox/ha-basket-tv-game-card/actions/workflows/hacs.yml/badge.svg?style=for-the-badge)](https://github.com/developpeurbox/ha-basket-tv-game-card/actions/workflows/hacs.yml)
+[![HACS Action](https://github.com/developpeurbox/basket-tv-game-card/actions/workflows/hacs.yml/badge.svg?style=for-the-badge)](https://github.com/developpeurbox/basket-tv-game-card/actions/workflows/hacs.yml)  
+
 
 **Carte Lovelace personnalisée pour afficher les matchs Basket TV** avec les logos des équipes, la ou les chaînes TV et l'heure du coup d'envoi.
 
-🔗 **Pour la création des capteurs (sensors)**, consultez [ce dépôt](https://github.com/developpeurbox/hass-basket-tv/blob/main/README.md).
+![Exemple Footao Game Card](/doc/images/example.png "Exemple d'affichage")
+
+🔗 **Pour la création des capteurs (sensors)**, consultez [ce dépôt](https://github.com/developpeurbox/hass-basket-tv).
 
 ---
 
@@ -62,6 +67,8 @@ Vous pouvez personnaliser l'apparence du pied de page (*footer*) directement via
 
 Lorsque aucun match n'est trouvé pour l'équipe configurée (match passé ou calendrier vide), la carte affiche automatiquement un état simplifié : le logo de l'équipe, son nom, et un message d'information.
 
+![Carte aucun match](/doc/images/example_no_game.png "Affichage sans match prévu")
+
 > **Aucun match prévu prochainement** s'affiche à la place des informations de diffusion habituelles. Dès qu'un prochain match est disponible dans le capteur, la carte reprend son affichage normal automatiquement.
 
 ---
@@ -69,11 +76,3 @@ Lorsque aucun match n'est trouvé pour l'équipe configurée (match passé ou ca
 
 Les informations affichées par cette carte (matchs, chaînes, logos) proviennent des capteurs de l'intégration [`hass-basket-tv`](https://github.com/developpeurbox/hass-basket-tv), elle-même alimentée par les flux publics de [**tv-sports.fr**](https://tv-sports.fr/).
 
----
-
-[releases-shield]: https://img.shields.io/github/v/release/developpeurbox/ha-basket-tv-game-card?style=for-the-badge
-[releases]: https://github.com/developpeurbox/ha-basket-tv-game-card/releases
-[hacs-badge]: https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge
-[hacs]: https://github.com/hacs/integration
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
-[forum]: https://community.home-assistant.io/
