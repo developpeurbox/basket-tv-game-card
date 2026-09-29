@@ -78,3 +78,7 @@ Lorsque aucun match n'est trouvé pour l'équipe configurée (match passé ou ca
 
 Les informations affichées par cette carte (matchs, chaînes, logos) proviennent des capteurs de l'intégration [`hass-basket-tv`](https://github.com/developpeurbox/hass-basket-tv), elle-même alimentée par les flux publics de [**tv-sports.fr**](https://tv-sports.fr/).
 
+---
+## 💬 **Communauté & Support**
+🗣️ **Forum Home Assistant** : [Discuter ici](https://forum.hacf.fr/t/carte-lovelace-integration-footao-le-programme-tv-foot-arrive-dans-home-assistant/84145)
+
