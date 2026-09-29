@@ -4,7 +4,7 @@
    (Betclic Élite / Pro B / NBA — https://github.com/developpeurbox/hass-basket-tv)
    ======================================================== */
 
-const BASKET_TV_GAME_CARD_VERSION = "v0.0.4";
+const BASKET_TV_GAME_CARD_VERSION = "v0.0.5";
 
 class BasketTvGameCard extends HTMLElement {
 
