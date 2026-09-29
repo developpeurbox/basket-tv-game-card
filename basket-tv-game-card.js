@@ -4,7 +4,7 @@
    (Betclic Élite / Pro B / NBA — https://github.com/developpeurbox/hass-basket-tv)
    ======================================================== */
 
-const BASKET_TV_GAME_CARD_VERSION = "v0.0.3";
+const BASKET_TV_GAME_CARD_VERSION = "v0.0.4";
 
 class BasketTvGameCard extends HTMLElement {
 
@@ -62,7 +62,7 @@ class BasketTvGameCard extends HTMLElement {
               display: flex; flex-direction: column; align-items: center; gap: 10px;
             }
             #${uid} .team-logo-wrap {
-              position: relative; width: 72px; height: 72px;
+              position: relative; width: 88px; height: 88px;
               display: flex; align-items: center; justify-content: center;
             }
             #${uid} .team-logo-ghost {
@@ -72,13 +72,13 @@ class BasketTvGameCard extends HTMLElement {
               filter: grayscale(40%) blur(1px); pointer-events: none; z-index: 0;
             }
             #${uid} .team-logo-chip {
-              position: relative; z-index: 1; width: 62px; height: 62px;
+              position: relative; z-index: 1; width: 88px; height: 88px;
               border-radius: 50%; background: #fff;
               display: flex; align-items: center; justify-content: center;
               box-shadow: 0 4px 14px rgba(0,0,0,.45);
             }
             #${uid} .team-logo {
-              width: 46px; height: 46px;
+              width: 64px; height: 64px;
               object-fit: contain;
             }
             #${uid} .team-name {
@@ -97,7 +97,7 @@ class BasketTvGameCard extends HTMLElement {
                       ${logoTeam ? `<img class="team-logo-ghost" src="${logoTeam}">` : ""}
                       ${logoTeam
                         ? `<div class="team-logo-chip"><img class="team-logo" src="${logoTeam}"></div>`
-                        : `<div style="width:72px;height:72px"></div>`}
+                        : `<div style="width:88px;height:88px"></div>`}
                     </div>
                     ${teamName ? `<span class="team-name">${teamName}</span>` : ""}
                     <span class="no-match-msg">Aucun match prévu prochainement</span>
@@ -150,10 +150,10 @@ class BasketTvGameCard extends HTMLElement {
           }
           #${uid} .team-block {
             display: flex; flex-direction: column; align-items: center;
-            gap: 6px; width: 80px; flex: 0 0 auto;
+            gap: 6px; width: 96px; flex: 0 0 auto;
           }
           #${uid} .team-logo-wrap {
-            position: relative; width: 72px; height: 72px;
+            position: relative; width: 88px; height: 88px;
             display: flex; align-items: center; justify-content: center;
           }
           #${uid} .team-logo-ghost {
@@ -163,13 +163,13 @@ class BasketTvGameCard extends HTMLElement {
             filter: grayscale(40%) blur(1px); pointer-events: none; z-index: 0;
           }
           #${uid} .team-logo-chip {
-            position: relative; z-index: 1; width: 62px; height: 62px;
+            position: relative; z-index: 1; width: 88px; height: 88px;
             border-radius: 50%; background: #fff;
             display: flex; align-items: center; justify-content: center;
             box-shadow: 0 4px 14px rgba(0,0,0,.45);
           }
           #${uid} .team-logo {
-            width: 46px; height: 46px;
+            width: 64px; height: 64px;
             object-fit: contain;
           }
           #${uid} .team-name {
@@ -235,7 +235,7 @@ class BasketTvGameCard extends HTMLElement {
                       ${logoDom ? `<img class="team-logo-ghost" src="${logoDom}">` : ""}
                       ${logoDom
                         ? `<div class="team-logo-chip"><img class="team-logo" src="${logoDom}"></div>`
-                        : `<div style="width:72px;height:72px"></div>`}
+                        : `<div style="width:88px;height:88px"></div>`}
                     </div>
                     <span class="team-name">${b.domicile || ""}</span>
                   </div>
@@ -264,7 +264,7 @@ class BasketTvGameCard extends HTMLElement {
                       ${logoExt ? `<img class="team-logo-ghost" src="${logoExt}">` : ""}
                       ${logoExt
                         ? `<div class="team-logo-chip"><img class="team-logo" src="${logoExt}"></div>`
-                        : `<div style="width:72px;height:72px"></div>`}
+                        : `<div style="width:88px;height:88px"></div>`}
                     </div>
                     <span class="team-name">${b.exterieur || ""}</span>
                   </div>
