@@ -4,7 +4,7 @@
    (Betclic Élite / Pro B / NBA — https://github.com/developpeurbox/hass-basket-tv)
    ======================================================== */
 
-const BASKET_TV_GAME_CARD_VERSION = "v0.0.1";
+const BASKET_TV_GAME_CARD_VERSION = "v0.0.3";
 
 class BasketTvGameCard extends HTMLElement {
 
@@ -63,7 +63,6 @@ class BasketTvGameCard extends HTMLElement {
             }
             #${uid} .team-logo-wrap {
               position: relative; width: 72px; height: 72px;
-              background: white;
               display: flex; align-items: center; justify-content: center;
             }
             #${uid} .team-logo-ghost {
@@ -72,9 +71,15 @@ class BasketTvGameCard extends HTMLElement {
               object-fit: contain; opacity: .15;
               filter: grayscale(40%) blur(1px); pointer-events: none; z-index: 0;
             }
+            #${uid} .team-logo-chip {
+              position: relative; z-index: 1; width: 62px; height: 62px;
+              border-radius: 50%; background: #fff;
+              display: flex; align-items: center; justify-content: center;
+              box-shadow: 0 4px 14px rgba(0,0,0,.45);
+            }
             #${uid} .team-logo {
-              position: relative; z-index: 1; width: 72px; height: 72px;
-              object-fit: contain; filter: drop-shadow(0 4px 14px rgba(0,0,0,.7));
+              width: 46px; height: 46px;
+              object-fit: contain;
             }
             #${uid} .team-name {
               font-size: 13px; font-weight: 600; color: rgba(255,255,255,.75); text-align: center;
@@ -91,7 +96,7 @@ class BasketTvGameCard extends HTMLElement {
                     <div class="team-logo-wrap">
                       ${logoTeam ? `<img class="team-logo-ghost" src="${logoTeam}">` : ""}
                       ${logoTeam
-                        ? `<img class="team-logo" src="${logoTeam}">`
+                        ? `<div class="team-logo-chip"><img class="team-logo" src="${logoTeam}"></div>`
                         : `<div style="width:72px;height:72px"></div>`}
                     </div>
                     ${teamName ? `<span class="team-name">${teamName}</span>` : ""}
@@ -157,9 +162,15 @@ class BasketTvGameCard extends HTMLElement {
             object-fit: contain; opacity: .15;
             filter: grayscale(40%) blur(1px); pointer-events: none; z-index: 0;
           }
+          #${uid} .team-logo-chip {
+            position: relative; z-index: 1; width: 62px; height: 62px;
+            border-radius: 50%; background: #fff;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 14px rgba(0,0,0,.45);
+          }
           #${uid} .team-logo {
-            position: relative; z-index: 1; width: 72px; height: 72px;
-            object-fit: contain; filter: drop-shadow(0 4px 14px rgba(0,0,0,.7));
+            width: 46px; height: 46px;
+            object-fit: contain;
           }
           #${uid} .team-name {
             font-size: 11px; color: rgba(255,255,255,.55); text-align: center; line-height: 1.2;
@@ -223,7 +234,7 @@ class BasketTvGameCard extends HTMLElement {
                     <div class="team-logo-wrap">
                       ${logoDom ? `<img class="team-logo-ghost" src="${logoDom}">` : ""}
                       ${logoDom
-                        ? `<img class="team-logo" src="${logoDom}">`
+                        ? `<div class="team-logo-chip"><img class="team-logo" src="${logoDom}"></div>`
                         : `<div style="width:72px;height:72px"></div>`}
                     </div>
                     <span class="team-name">${b.domicile || ""}</span>
@@ -252,7 +263,7 @@ class BasketTvGameCard extends HTMLElement {
                     <div class="team-logo-wrap">
                       ${logoExt ? `<img class="team-logo-ghost" src="${logoExt}">` : ""}
                       ${logoExt
-                        ? `<img class="team-logo" src="${logoExt}">`
+                        ? `<div class="team-logo-chip"><img class="team-logo" src="${logoExt}"></div>`
                         : `<div style="width:72px;height:72px"></div>`}
                     </div>
                     <span class="team-name">${b.exterieur || ""}</span>
