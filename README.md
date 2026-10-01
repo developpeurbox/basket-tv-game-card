@@ -1,5 +1,8 @@
-# 🏀 **Basket TV Game Card** 📺
+<p align="center">
+  <img src="/doc/images/example.png" alt="Exemple d'affichage" width="400"/>
+</p>
 
+# 🏀 **Basket TV Game Card** 📺
 [![PayPal](https://img.shields.io/badge/paypal-me-blue.svg?style=for-the-badge&color=purple&logo=paypal&logoColor=ccc&link=https%3A%2F%2Fpaypal.me%2hlaissus/5)](https://paypal.me/hlaissus/5)
 [![GitHub Release]( https://img.shields.io/github/v/release/developpeurbox/basket-tv-game-card?style=for-the-badge&color=blue)](https://github.com/developpeurbox/basket-tv-game-card/releases)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=for-the-badge&color=blue)](https://github.com/hacs/integration)
@@ -11,25 +14,32 @@
 
 **Carte Lovelace personnalisée pour afficher les matchs Basket TV** avec les logos des équipes, la ou les chaînes TV et l'heure du coup d'envoi.
 
-![Exemple Footao Game Card](/doc/images/example.png "Exemple d'affichage")
 
 🔗 **Pour la création des capteurs (sensors)**, consultez [ce dépôt](https://github.com/developpeurbox/hass-basket-tv).
 
----
+## 📦 Installation
 
-## 📥 **Installation**
+> [!TIP]
+> ### Installation Rapide via HACS
+> Cliquez sur le bouton ci-dessous pour ajouter automatiquement le dépôt dans HACS :
+>
+> [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=developpeurbox&repository=hass-basket-tv-game-card&category=integration)
 
-### **Via HACS (recommandé)** 🔄
-1. Ajoutez ce dépôt à HACS :
-   **Dépôts personnalisés** → **Ajouter un dépôt personnalisé**
+### 🏗️ Méthode 1 : HACS (Recommandée)
 
-   → `https://github.com/developpeurbox/ha-basket-tv-game-card/`
+   1. Ouvrez **HACS** dans Home Assistant
+   2. Allez dans **Intégrations**
+   3. Cliquez sur les **3 points** en haut à droite → **Dépôts personnalisés**
+   4. Ajouter: [https://github.com/developpeurbox/hass-footao.git](https://github.com/developpeurbox/hass-basket-tv-game-card)
+   5. Catégorie **Tableau de bord**
+   6. Cherchez "**Basket TV Card**" et cliquez sur **Télécharger**
 
-### **Ou manuellement** 🛠️
-1. Téléchargez le fichier depuis [les releases](https://github.com/developpeurbox/ha-basket-tv-game-card/releases).
-2. Placez-le dans le dossier `/config/www/`.
 
----
+### 🏗️ Méthode 2 : Manuelle
+  1. Téléchargez le fichier depuis [les releases](https://github.com/developpeurbox/ha-basket-tv-game-card/releases).
+  2. Placez-le dans le dossier `/config/www/`.
+
+
 ## 🎨 Carte `basket-tv-game-card`
 
 Ajoutez simplement ce code dans votre configuration :
