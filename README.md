@@ -30,7 +30,7 @@
    1. Ouvrez **HACS** dans Home Assistant
    2. Allez dans **Intégrations**
    3. Cliquez sur les **3 points** en haut à droite → **Dépôts personnalisés**
-   4. Ajouter: [https://github.com/developpeurbox/hass-footao.git](https://github.com/developpeurbox/ha-basket-tv-game-card)
+   4. Ajouter: [https://github.com/developpeurbox/ha-basket-tv-game-card.git](https://github.com/developpeurbox/ha-basket-tv-game-card)
    5. Catégorie **Tableau de bord**
    6. Cherchez "**Basket TV Card**" et cliquez sur **Télécharger**
 
