@@ -78,8 +78,10 @@ Vous pouvez personnaliser l'apparence du pied de page (*footer*) directement via
 ## 📭 **Aucun match prévu**
 
 Lorsque aucun match n'est trouvé pour l'équipe configurée (match passé ou calendrier vide), la carte affiche automatiquement un état simplifié : le logo de l'équipe, son nom, et un message d'information.
+<p align="center">
+  <img src="/doc/images/nogame.png" alt="Affichage sans match prév" width="400"/>
+</p>
 
-![Carte aucun match](/doc/images/nogame.png "Affichage sans match prévu")
 
 > **Aucun match prévu prochainement** s'affiche à la place des informations de diffusion habituelles. Dès qu'un prochain match est disponible dans le capteur, la carte reprend son affichage normal automatiquement.
 
